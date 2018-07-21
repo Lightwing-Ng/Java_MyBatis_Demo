@@ -42,7 +42,7 @@ public class MyBatisTest {
         SqlSessionFactory sqlSessionFactory = SqlSessionFactoryUtils.getSqlSessionFactory();
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        String name = "o";
+        String name = "Light";
         List<User> users = sqlSession.selectList("user.getUserByName", name);
 
         System.out.println("Result of users contains of: " + name);
